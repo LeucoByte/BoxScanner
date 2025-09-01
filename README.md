@@ -19,17 +19,20 @@ Make sure you have the following installed:
 
 ## Installation
 
-Clone the repository (only the code, images are optional and not needed):
-
-# Clone the repository and enter the folder
+Clone the repository and enter the folder
+``` bash
 git clone https://github.com/LeucoByte/BoxScanner.git
 cd BoxScanner
-
-# Make the script executable
+```
+Make the script executable
+``` bash
 chmod +x boxscanner.sh
-
-# Quick test / help
+```
+Quick test / help
+``` bash
 bash boxscanner.sh --help
-
-# Simple example usage for beginners:
+```
+Simple example usage for beginners:
+```
 bash boxscanner.sh --target 10.10.11.79 --dns-wordlist /path/to/your/dns/wordlist/wordlist.txt --web-wordlist /path/to/your/web/wordlist/other_wordlist.txt -o output_name
+```
