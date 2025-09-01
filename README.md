@@ -17,9 +17,19 @@ Make sure you have the following installed:
   - Gobuster (sudo apt install gobuster) version 3.8 recommended for proper DNS pretty print
   - Wordlists (seclists recommended)
 
-Example with the HTB machine "Era": 
-bash boxscanner.sh --target 10.10.11.79 \
-                  --dns-wordlist /usr/share/seclists/Discovery/DNS/namelist.txt \
-                  --web-wordlist /usr/share/wordlists/dirb/common.txt \
-                  -t 200 \
-                  -o era              
+## Installation
+
+Clone the repository (only the code, images are optional and not needed):
+
+# Clone the repository and enter the folder
+git clone https://github.com/LeucoByte/BoxScanner.git
+cd BoxScanner
+
+# Make the script executable
+chmod +x boxscanner.sh
+
+# Quick test / help
+bash boxscanner.sh --help
+
+# Simple example usage for beginners:
+bash boxscanner.sh --target 10.10.11.79 --dns-wordlist /path/to/your/dns/wordlist/wordlist.txt --web-wordlist /path/to/your/web/wordlist/other_wordlist.txt -o output_name
