@@ -28,7 +28,7 @@ Make the script executable
 ``` bash
 chmod +x boxscanner.sh
 ```
-Quick test / help
+Quick help about how to use
 ``` bash
 bash boxscanner.sh --help
 ```
